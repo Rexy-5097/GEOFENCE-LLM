@@ -1,0 +1,24 @@
+Loaded 50 trajectories.
+
+--- 1. Dimensional Consistency ---
+✅ All layers have consistent dimension: 3072
+
+--- 2. Numerical Health ---
+Layer 5: ✅ NaNs=0, Infs=0, Zeros=0
+Layer 10: ✅ NaNs=0, Infs=0, Zeros=0
+Layer 15: ✅ NaNs=0, Infs=0, Zeros=0
+Layer 20: ✅ NaNs=0, Infs=0, Zeros=0
+
+--- 3. Norm Distribution (L2) ---
+Layer 5 Mean Norm: Safe=55.7869, Mal=53.7659
+Layer 10 Mean Norm: Safe=56.0281, Mal=53.9921
+Layer 15 Mean Norm: Safe=57.4318, Mal=55.3601
+Layer 20 Mean Norm: Safe=61.5037, Mal=59.6142
+
+--- 4. Continuity Sanity (Cosine) ---
+Transition 5->10: Mean CosSim=0.9961, Min=0.9679
+  ⚠️ Warning: Extremely high coherence. Layers might be collapsing.
+Transition 10->15: Mean CosSim=0.9921, Min=0.9461
+  ⚠️ Warning: Extremely high coherence. Layers might be collapsing.
+Transition 15->20: Mean CosSim=0.9858, Min=0.9222
+  ✅ Coherence healthy.
